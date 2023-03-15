@@ -17,7 +17,7 @@ function App() {
       .then((resp) => resp.json())
       .then((res) => setData(res));
   }, []);
-  console.log(data);
+ 
   const getInfos = () => {
     const employee = data.find((item) => item.firstName === name);
     if (employee) {
